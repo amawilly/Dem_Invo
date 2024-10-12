@@ -36,6 +36,12 @@
     font-family: 'Protest Strike', sans-serif;
     font-size: 26px;
 }
+.menu .home img {
+    height: 100%;
+}
+.menu .home span {
+    margin-bottom: 20px;
+}
 .menu .promo {
     color: #8A2387;
     margin-left: 30px;
