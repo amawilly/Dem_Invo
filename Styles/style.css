@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Londrina+Sketch&display=swap');
+* {
+    box-sizing: border-box;
+  }
+body{
+	margin: 0px;
+    overflow-x: hidden;
+    background: linear-gradient(to right, #8a2387, #e94057, #f27121);
+} 
+body::-webkit-scrollbar {
+    width: 11px;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #888;
+}
+body::-webkit-scrollbar-track {
+    background-color: #000;
+}
+body.scrollbar-start::-webkit-scrollbar-thumb {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+body.scrollbar-middle::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+}
+body.scrollbar-end::-webkit-scrollbar-thumb {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.page {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.data {
+    display: flex;
+    width: 50vh;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+button {
+    background-color: #8A2387;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+}

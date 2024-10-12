@@ -1,0 +1,22 @@
+dialog {
+    background: linear-gradient(to left bottom, #bc4e9dc2, #f80757c2);
+    font-family: cursive;
+    padding: 50px;
+}
+dialog input {
+    background-color: black;
+    color: white;
+    height: 25px;
+    border-radius: 10px;
+    padding: 10px;
+}
+dialog span {
+    font-size: 40px;
+    font-weight: bold;
+}
+dialog p {
+    font-size: 28px;
+}
+dialog button {
+    font-size: 28px;
+}

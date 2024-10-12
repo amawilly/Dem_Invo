@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <audio id="backgroundMusic" autoplay loop>
+        <source src="./Media/music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Styles/navbar.css">
+    <link rel="stylesheet" href="Styles/footer.css">
+    <link rel="stylesheet" href="Styles/content.css">
+    <link rel="stylesheet" href="Styles/dialog.css">
+    <link rel="shortcut icon" href="./Media/icon.png" type="image.png">
+    <title>Dem Invo</title>
+</head>
+<body>
+    <div class="page">
+    <header class="head"></header>
+        <ul class="menu">
+            <li>
+                <a class="home">Dem Invo</a>
+            </li>
+            <div class="centru">
+                <li><button class="produse_nav" onclick="open_test()">Courses</button></li>
+                <li><button class="produse_nav" onclick="open_test()">Take a test</button></li>
+                <li><button class="produse_nav" onclick="open_test()">Propose an ideea</button></li>
+                <li><button class="produse_nav" onclick="open_test()">Posts</button></li>
+            </div>
+            <div class="nav_end">
+                <li class="administrator">
+                    <button id="loginBtn" onclick="open_admin()"><img src="./Media/administrator.png" alt="admin"></button>
+                    <dialog id="loginDialog" class="dialog">
+                        <div class="inputs">
+                            <h2>Autentificare</h2>
+                            <input type="text" id="adm-username" placeholder="User Name">
+                            <input type="password" id="adm-password" placeholder="Password">
+                        </div>
+                        <br>
+                            <button onclick="logareAdmin()">Autentificare</button>
+                            <button onclick="inchideAdmin()">Anulare</button>
+                    </dialog>
+                </li>
+            </div>
+        </ul>
+    </header>
+    <div class="content">
+        <div class="motto"><span>One vote can change everything!</span></div>
+        <div class="game">
+            <span class="game_title">Let's do it!</span>
+            <div class="buttons">
+                <button class="but1" onclick="startGame()"><img src="./Media/start.png" alt="start"></button>
+                <button class="but2" onclick="sound()"><img src="./Media/speaker.png" alt="speaker"></button>
+            </div>
+        </div>
+    </div>
+
+    <dialog id="firstDialog">
+        <span>First Round</span>
+        <p>What is my name?</p>
+        <input type="text" id="nameInput" placeholder="Enter your answer">
+        <p id="scoreDisplay">Score: 0</p>
+        <button onclick="closeFirst()">Close</button>
+        <button onclick="checkName()">Check</button>
+    </dialog>
+
+    <dialog id="secondDialog">
+        <span>Arrange the sentence</span>
+        <div id="buttonsContainer"></div>
+        <p id="secondScoreDisplay">Score: 0</p>
+        <button onclick="closeSecond()">Close</button>
+        <button onclick="checkSentence()">Submit</button>
+    </dialog>
+
+    <dialog id="thirdDialog">
+        <span>Wordle: Guess the word</span>
+        <p id="wordleDisplay">_ _ _ _ _ _ _ _ _ _</p>
+        <input type="text" id="letterInput" maxlength="1" placeholder="Enter a letter">
+        <p id="thirdScoreDisplay">Score: 0</p>
+        <button onclick="checkLetter()">Check Letter</button>
+        <button onclick="closeThird()">Close</button>
+    </dialog>
+
+    <dialog id="fourthDialog">
+        <span>Guess the age</span>
+        <p>How old am I?</p>
+        <input type="number" id="ageInput" placeholder="Enter age">
+        <p id="hint"></p>
+        <p id="fourthScoreDisplay">Score: 0</p>
+        <button onclick="closeFourth()">Close</button>
+        <button onclick="checkAge()">Submit</button>
+    </dialog>
+
+    <dialog id="finalDialog">
+        <span>Congratulations!</span>
+        <p id="finalScoreMessage"></p>
+        <button onclick="closeFinal()">Close</button>
+    </dialog>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Partners</h3>
+                    <p>National Youth Platform for Active Participation(PNTP)</p>
+                    <p>Raional Youth Council - Criuleni(with RNCLTM)</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Contacts</h3>
+                    <p>Name: 060000000</p>
+                    <p>adress@gmail.com</p>
+                    <p>Adress: Yep street, 23</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Info</h3>
+                    <ul>
+                        <li>        
+                            <span class="flaticon">
+                                <p>
+                                    Great news for the Moldavian youth!<br>The DemInfo platform launched this weekend, making way to a gamified experience of learning about politics and electoral processes. The best-scoring users are going to be rewarded with prizes such as theater and movie tickets, books. 
+                                </p>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+    <script src="./Scripts/script.js"></script>
+</body>
+</html>

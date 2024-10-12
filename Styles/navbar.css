@@ -1,0 +1,98 @@
+.menu{
+    background: rgba(0, 0, 0, 0.5);
+	display: flex;
+	padding: 10px auto 10px auto;
+	font-size: 20px;
+	transition: all 0.3s;
+    justify-content: space-between;
+    height: 60px;
+    margin: 0;
+}
+.centru {
+    display: flex;
+}
+.centru li {
+    margin-left: 3vh;
+    margin-right: 3vh;
+}
+.centru button {
+    font-family: cursive;
+}
+.menu li, .menu .centru {
+	list-style: none;
+	position: relative;
+}   
+.menu a{
+	color: white;
+	text-decoration: none;
+	display: block;
+	transition: all 0.3s;
+	font-family: cursive;
+	text-shadow: 3px 3px 5px black;
+    height: 75%;
+    margin-top: 7px;
+}
+.menu .home {
+    font-family: 'Protest Strike', sans-serif;
+    font-size: 26px;
+}
+.menu .promo {
+    color: #8A2387;
+    margin-left: 30px;
+    background: transparent;
+    margin-top: 10px;
+    font-family: cursive;
+    font-size: 22px;
+}
+.menu a:hover {
+	text-shadow: 3px 3px 10px black;
+}
+.menu li:hover ul {
+	display: block;
+	font-size: 25px;
+    z-index: 1;
+}
+.text {
+    background: #444;
+	border-radius: 17px;
+	transition: all 0.3s;
+    padding-top: 1px;
+    padding-bottom: 5px;
+}
+.menu ul{
+	position: absolute;
+	left: 0;
+	top: 100%;
+	display: none;
+	padding: 0;
+	font-family: cursive;
+}
+.head .menu li a {
+    align-items: center;
+    display: flex;
+    justify-content: left;
+}
+.nav_end {
+    display: flex;
+    margin-right: 20px;
+}
+.produse_nav {
+    margin-top: 10px;
+    background-color: transparent;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+	text-shadow: 3px 3px 5px black;
+}
+.administrator #loginBtn {
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.administrator #loginBtn img{
+    width: 50px;
+}
+.administrator .auth-buttons {
+    display: flex;
+    color: #000;
+    margin-right: 30px;
+}

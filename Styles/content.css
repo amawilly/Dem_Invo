@@ -1,0 +1,51 @@
+.content {
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-bottom: 50px;
+}
+.motto {
+    display: flex;
+    justify-content: flex-end;
+    margin: 50px;
+}
+.motto span {
+    font-family: "Londrina Sketch", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 150px;
+    background: rgba(255, 255, 255, 0.5);
+    width: fit-content;
+    height: 50vh;
+    padding: 20px;
+    border-radius: 20% 5% 20% 5%;
+}
+.game .game_title {
+    font-size: 50px;
+    font-family: "Londrina Sketch", sans-serif;
+    font-weight: bold;
+}
+.game .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 40vi;
+}
+.game button {
+    background: none;
+    margin-bottom: 100px;
+}
+.but1 img {
+    height: 200px;
+    margin-top: -50px;
+}
+.but2 img {
+    height: 100px;
+}
