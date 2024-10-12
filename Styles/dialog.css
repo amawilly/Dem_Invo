@@ -1,6 +1,6 @@
 dialog {
     background: linear-gradient(to left bottom, #bc4e9d, #f80757);
-    font-family: cursive;
+    font-family: "Concert One", sans-serif;
     padding: 50px;
 }
 dialog input {
